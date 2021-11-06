@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="assets/css/style.min.css">
+	
+	<!-- Useful meta tags -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="robots" content="index, follow">
+	<meta name="google" content="notranslate">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+	
+	<title>Sign Up</title>
+</head>
+
+<body class="">
+	<!-- class="no-scroll" -->
+	<!-- class="show-sidebar" -->
+	<div class="page" id="page">
+		<!-- Header -->
+		<header class="header">
+			<div class="header__left">
+				<nav class="nav">
+					<ul class="nav__list">
+						<li class="nav__item">
+							<a href="index.html" class="nav__link">Главная</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link has-subnav">Cтатьи</a>
+							<ul class="subnav">
+								<li>
+									<a class="subnav__link" href="#">Создание сайтов</a>
+								</li>
+								<li>
+									<a class="subnav__link" href="#">Интернет-маркетинг</a>
+								</li>
+								<li>
+									<a class="subnav__link" href="#">Продвижение видео</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav__item">
+							<a href="text.html" class="nav__link">Обо мне</a>
+						</li>
+						<li class="nav__item">
+							<a href="text.html" class="nav__link">Реклама</a>
+						</li>
+					</ul>
+				</nav>
+		
+				<button class="burger " type="button" id="sidebarToggle">
+					<!--  burger-active-->
+					<span>Открить навигацию</span>
+				</button>
+		
+			</div>
+			<div class="header__right">
+				<nav class="nav">
+					<ul class="nav__list ">
+						<li class="nav__item ">
+							<a href="profile.html" class="nav__link">Профиль</a>
+						</li>
+						<li class="nav__item ">
+							<a href="#" class="nav__link">Вийти</a>
+						</li>
+					</ul>
+				</nav>
+				<form class="search" action="search.html" method="get">
+					<input class="search__input" type="text" placeholder="Поиск по блогу">
+				</form>
+			</div>
+		</header>
+		<!-- Sidebar -->
+		<aside class="sidebar" id="sidebar">
+		  <div class="sidebar__header">
+		    <img src="../assets/images/sidebar-header.jpg" alt="sidebar-header">
+		  </div>
+		  <div class="sidebar__content">
+		    <div class="profile">
+		      <img class="profile__avatar" src="https://via.placeholder.com/100" alt="">
+		      <div class="profile__header">
+		        <div class="profile__name">Дмитрий Валак</div>
+		        <div class="profile__prof">блог front-end разработчика</div>
+		      </div>
+		      <ul class="social">
+		        <li class="social__item">
+		          <a class="social__link" href="#" target="_blank">
+		            <img src="../assets/images/instagram.svg" alt="Instagram Дмитрий Валак">
+		          </a>
+		        </li>
+		        <li class="social__item">
+		          <a class="social__link" href="#" target="_blank">
+		            <img src="../assets/images/vk.svg" alt="Vk Дмитрий Валак">
+		          </a>
+		        </li>
+		        <li class="social__item">
+		          <a class="social__link" href="#" target="_blank">
+		            <img src="../assets/images/pinterest.svg" alt="Printerest Дмитрий Валак">
+		          </a>
+		        </li>
+		      </ul>
+		      <div class="profile__text">
+		        Front-end разработчик. Практик верстки сайтов.
+		
+		        Созданием сайтов занимаюсь с 2012 года. Работал в нескольких ИТ компаниях и наработал более 10 000 часов в
+		        создании сайтов различной сложности.
+		      </div>
+		    </div><!-- .profile -->
+		
+		    <nav class="nav nav--mobile">
+		      <ul class="nav__list">
+		        <li class="nav__item">
+		          <a href="index.html" class="nav__link">Главная</a>
+		        </li>
+		        <li class="nav__item">
+		          <a href="#" class="nav__link has-subnav">Cтатьи</a>
+		          <ul class="subnav">
+		            <li>
+		              <a class="subnav__link" href="#">Создание сайтов</a>
+		            </li>
+		            <li>
+		              <a class="subnav__link" href="#">Интернет-маркетинг</a>
+		            </li>
+		            <li>
+		              <a class="subnav__link" href="#">Продвижение видео</a>
+		            </li>
+		          </ul>
+		        </li>
+		        <li class="nav__item">
+		          <a href="text.html" class="nav__link">Обо мне</a>
+		        </li>
+		        <li class="nav__item">
+		          <a href="text.html" class="nav__link">Реклама</a>
+		        </li>
+		        <li class="nav__item">
+		          <a href="profile.html" class="nav__link">Профиль</a>
+		        </li>
+		        <li class="nav__item">
+		          <a href="text.html" class="nav__link">Вийти</a>
+		        </li>
+		      </ul>
+		    </nav>
+		  </div><!-- .sidebar__content -->
+		  <div class="sidebar__footer">
+		    <a href="works.html" class="btn btn--red">Мои работы</a>
+		    <button class="btn btn--blue" type="button" data-modal="contact-modal">Написать мне</button>
+		  </div>
+		</aside>
+		<main class="main">
+			<div class="container">
+				<h1 class="page__title page__title--tac">Регистрация</h1>
+				<form action="/" method="post" class="form form--auth">
+				  <div class="form__group form__group--mb">
+				    <input type="text" class="form__control " placeholder="Ваше имя">
+				    <span class="form__line"></span>
+				  </div>
+				  <div class="form__group form__group--mb">
+				    <input type="email" class="form__control " placeholder="Ваш email">
+				    <span class="form__line"></span>
+				  </div>
+				  <div class="form__group form__group--mb ">
+				    <input type="password" class="form__control " placeholder="Ваш пароль">
+				    <span class="form__line"></span>
+				  </div>
+				  <div class="form__group form__group--mb">
+				    <input type="password" class="form__control " placeholder="Ваш еще раз пароль">
+				    <span class="form__line"></span>
+				  </div>
+				  <div class="form__footer form__footer--center">
+				    <div class="form__group form__group--mb">
+				      <button type="submit" class="btn btn--blue btn--rounded">Регистрация</button>
+				    </div>
+				    <ul class="form__footer-list">
+				      <li><a href="reset.html">восстановить</a></li>
+				      <li><a href="signin.html">войти</a></li>
+				    </ul>
+				  </div>
+				
+				</form>
+			</div>
+		</main>
+	</div>
+
+	<div class="modal" id="contact-modal">
+	  <div class="modal__content">
+	    <button class="modal__close" type="button"><img src="./assets/images/close.svg" alt="Close"></button>
+	
+	    <form action="/" method="get" class="form">
+	      <div class="form__group">
+	        <input type="text" class="form__control form__group--mb" placeholder="Ваше имя">
+	        <span class="form__line"></span>
+	      </div>
+	      <div class="form__group form__group--mb">
+	        <input type="email" class="form__control" placeholder="Ваш email">
+	        <span class="form__line"></span>
+	      </div>
+	      <div class="form__group form__group--mb">
+	        <input type="text" class="form__control form__control--textarea" placeholder="Текст сообщения">
+	        <span class="form__line"></span>
+	      </div>
+	      <div class="form__footer">
+	        <button class="btn btn--rounded btn--blue ">Отправить</button>
+	      </div>
+	    </form>
+	
+	    <ul class="modal__footer">
+	      <li>
+	        e-mail: <a href="mailto:info@mywebsite.ru">info@mywebsite.ru </a>
+	
+	      </li>
+	      <li>
+	        тел: <a href="tel:+94323285622">+943-232-856-22</a>
+	
+	      </li>
+	    </ul>
+	  </div> <!-- modal content-->
+	</div>	<div class="modal">
+	  <div class="modal__content modal__content--pb">
+	    <button class="modal__close" type="button"><img src="./assets/images/close.svg" alt="Close"></button>
+	    <ul class="social">
+	      <li class="social__item">
+	        <a class="  social__link social__link--wh" href="#">
+	          <img src="../assets/images/facebook.svg" alt="Instagram Дмитрий Валак">
+	        </a>
+	      </li>
+	      <li class="social__item">
+	        <a class="  social__link social__link--wh" href="#">
+	          <img src="../assets/images/vk.svg" alt="Vk Дмитрий Валак">
+	        </a>
+	      </li>
+	      <li class="social__item">
+	        <a class="  social__link social__link--wh" href="#">
+	          <img src="../assets/images/twitter.svg" alt="Printerest Дмитрий Валак">
+	        </a>
+	
+	      </li>
+	      <li class="social__item">
+	        <a class="  social__link social__link--wh" href="#">
+	          <img src="../assets/images/copy.svg" alt="Vk Дмитрий Валак">
+	        </a>
+	      </li>
+	    </ul>
+	  </div> <!-- modal content-->
+	</div>	<div class="modal" id="story-modal">
+	  <div class="modal__content modal__content__story">
+	    <video class="modal__video" poster="https://via.placeholder.com/420x580.png" src="#"></video>
+	  </div>
+	</div>
+
+	<script src="assets/js/app.js"></script>
+</body>
+
+</html>

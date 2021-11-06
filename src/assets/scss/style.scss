@@ -1,0 +1,91 @@
+@import "vendor/reset";
+
+@import "vars";
+@import "mixins";
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	background-color: #181818;
+	font-size: 1.4rem;
+	color: $white;
+	font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	line-height: 1.5;
+
+	&.no-scroll {
+		overflow: hidden;
+	}
+
+	@include media($tablet-bp) {
+		&.show-sidebar {
+			overflow: hidden;
+		}
+	}
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+// Blocks
+@import "blocks/page";
+@import "blocks/header";
+@import "blocks/nav";
+@import "blocks/subnav";
+@import "blocks/search";
+@import "blocks/burger";
+
+@import "blocks/sidebar";
+@import "blocks/main";
+@import "blocks/container";
+@import "blocks/social";
+@import "blocks/btn";
+@import "blocks/profile";
+@import "blocks/stories";
+@import "blocks/add-post";
+
+@import "blocks/post";
+@import "blocks/embed";
+@import "blocks/pagination";
+@import "blocks/related";
+@import "blocks/comments";
+@import "blocks/form";
+@import "blocks/work";
+@import "blocks/tags";
+@import "blocks/profile";
+@import "blocks/cabinet";
+@import "blocks/modal";
+
+
+
+// .share {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   max-width: 280px;
+//   margin: 0 auto;
+
+//   &__link {
+//     width: 45px;
+//     height: 45px;
+
+//     img {
+//       display: block;
+//       width: 100%;
+//       height: 100%;
+//       object-fit: cover;
+//     }
+//   }
+// }

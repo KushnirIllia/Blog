@@ -1,0 +1,32 @@
+.header {
+  width: calc(100% - #{$sidebar-width});
+
+  background-color: #0D0D0D;
+  box-shadow: 0px 5px 22px rgba($black, 0.25);
+  position: fixed;
+  z-index: $z-index-header;
+  top: 0;
+  right: 0;
+
+  display: flex;
+
+  &__left {
+    width: 60%;
+    @include media($tablet-bp) {
+      width: 40%;
+    }
+  }
+
+  &__right {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+    @include media($tablet-bp) {
+      width: 60%;
+    }
+  }
+
+  @include media($tablet-bp) {
+    width: 100%;
+  }
+}

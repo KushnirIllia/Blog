@@ -1,0 +1,21 @@
+.social {
+  display: flex;
+  justify-content: center;
+
+  @include media($tablet-bp) {
+    display: none;
+  }
+
+  &__item {
+    margin: 0 0.75rem;
+  }
+
+  &__link--wh {
+    img {
+      display: block;
+      width: 45px;
+      height: 45px;
+      // object-fit: cover;
+    }
+  }
+}

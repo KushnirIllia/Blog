@@ -1,0 +1,43 @@
+.btn {
+  display: inline-block;
+  vertical-align: top;
+
+  padding: 1.1em 2.1em;
+  font-size: 1.2rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: $white;
+
+  background-color: $secondary;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 3em;
+  transition: .2s linear;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &--red {
+    @include btnColorStyleAndHover($red)
+  }
+
+  &--blue {
+    @include btnColorStyleAndHover($blue)
+  }
+
+  &--rounded {
+    border-radius: 0.41em;
+  }
+
+  &--small {
+    padding: 0.7em 1.25em;
+
+    @include media($mobile-bp) {
+      padding: 1em 1.25em;
+
+    }
+  }
+}

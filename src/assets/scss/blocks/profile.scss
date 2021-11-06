@@ -1,0 +1,71 @@
+.profile {
+  margin-top: -5rem;
+
+  @include media($tablet-bp) {
+    margin-top: -1rem;
+    position: relative;
+    border-bottom: 1px solid #1C1C1C;
+  }
+
+
+  &__avatar {
+    width: 10rem;
+    height: 10rem;
+    display: block;
+    margin: 0 auto 2rem;
+    border: 2px solid $white;
+    box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    position: relative;
+
+    @include media($tablet-bp) {
+      width: 6.5rem;
+      height: 6.5rem;
+      margin-left: 0;
+      position: absolute;
+      left: 0;
+    }
+  }
+
+  &__header {
+    margin-bottom: 2rem;
+    text-align: center;
+
+    @include media($tablet-bp) {
+      text-align-last: left;
+
+      padding: 2rem 0 0 8rem;
+    }
+  }
+
+  &__name {
+    font-size: 1.8rem;
+
+    @include media($tablet-bp) {
+      font-size: 1.5rem;
+    }
+  }
+
+  &__prof {
+    font-weight: 300;
+    font-size: 1.4rem;
+    color: #dedede;
+
+    @include media($tablet-bp) {
+      font-size: 1.2rem;
+    }
+  }
+
+  &__text {
+    padding: 3rem 0;
+    margin: 3rem 0;
+    text-align: center;
+    font-size: 1.2rem;
+    border-bottom: 1px solid #1C1C1C;
+    border-top: 1px solid #1C1C1C;
+
+    @include media($tablet-bp) {
+      display: none;
+    }
+  }
+}
